@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- *main - prints alpha in lower casiAlways 0 (Success)
+ *main - print lowercase a-z
+ *Return: Always 0 (Success)
  */
 
 int main(void)
