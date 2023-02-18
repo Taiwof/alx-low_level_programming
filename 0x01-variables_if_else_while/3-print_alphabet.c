@@ -1,20 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet.
+ *main - print alpha lowercase and uppercase a-z A-Z
  *
- * Return: Always 0 (Success)
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char lower = 'a';
+	char upper = 'A';
 
-	int i;
-
-	for (i = 0; i < 52; i++)
+	while (lower <= 'z') /*print lowercases a-z*/
 	{
-		putchar(alp[i]);
+		putchar(lower);
+		lower++;
 	}
+
+	while (upper <= 'Z') /*print uppercase A-Z*/
+	{
+		putchar(upper);
+		upper++;
+	}
+
 	putchar('\n');
+
 	return (0);
 }
+
