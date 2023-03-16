@@ -83,8 +83,8 @@ return (0);
 
 /**
  * init - initializes a string
- * @str: sting to initialize
- * @l: length of strinf
+ * @str: string to initialize
+ * @l: length of string
  * Return: void
  */
 void init(char *str, int l)
