@@ -36,7 +36,8 @@ if (r > 0)
 w = write(to, buffer, r);
 if (w == -1)
 dprintf(STDERR_FILENO, WRITE_ERR, argv[2]), exit(99);
-} else
+}
+else
 break;
 }
 on_close = close(from);
@@ -45,5 +46,7 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from), exit(100);
 on_close = close(to);
 if (on_close == -1)
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to), exit(100);
+
 return (0);
+
 }
